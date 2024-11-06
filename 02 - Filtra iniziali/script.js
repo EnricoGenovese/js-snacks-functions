@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 function filterInitial(haystack, needle) {
     let newArray = [];
     for( let i = 0; i < haystack.length; i++) {
-        if(haystack[i].charAt(0) === needle) {
+        if(haystack[i].charAt(0).toLowerCase() === needle.toLowerCase()) {
             newArray.push(haystack[i]);
         }
     }
@@ -17,7 +17,7 @@ function filterInitial(haystack, needle) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const onlyA = filterInitial(names, "A");
+const onlyA = filterInitial(names, "a");
 console.log(onlyA);
 
 
