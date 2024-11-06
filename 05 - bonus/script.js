@@ -18,7 +18,7 @@ function timeGreeting(string) {
         console.log("Buon pomeriggio " + string)
     } else if(date.getHours() > 17 && date.getHours() < 23) {
         console.log("Buonasera " + string);
-    } else if (date.getHours() < 6) {
+    } else if (date.getHours() >= 23 && date.getHours() < 6) {
         console.log("Buonanotte" + string);
     }
 }
